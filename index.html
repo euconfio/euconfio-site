@@ -13,15 +13,19 @@
     <meta property="og:type" content="website">
     <meta property="twitter:type" content="website">
     <link rel="canonical" href="https://euconfio.app/">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bd5ec36dafa4724568b8ae.png">
 
     <title>Eu Confio | Indicações confiáveis e renda extra</title>
-    <link rel="stylesheet" href="assets/css/style.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css?v=3">
     <style>
         :root {
-            --color-primary: #1E5A96;
-            --color-primary-dark: #0C2340;
-            --color-accent: #5ED362;
+            --color-primary: #1567B9;
+            --color-primary-dark: #1C1B4D;
+            --color-accent: #4FEC69;
+            --color-accent-text: #1C1B4D;
             --color-bg-light: #F5F5F5;
             --color-text-primary: #333333;
             --color-text-secondary: #666666;
@@ -40,10 +44,14 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             color: var(--color-text-primary);
             line-height: 1.6;
             background-color: var(--color-white);
+        }
+
+        h1, h2, h3, .logo, .footer-logo {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         .container {
@@ -96,8 +104,8 @@
 
         /* Buttons */
         .btn {
-            padding: 15px 40px;
-            border-radius: 30px;
+            padding: 15px 32px;
+            border-radius: 75px;
             border: none;
             font-weight: 600;
             font-size: 16px;
@@ -112,18 +120,18 @@
 
         .btn-primary {
             background-color: var(--color-accent);
-            color: var(--color-primary-dark);
+            color: var(--color-accent-text);
         }
 
         .btn-primary:hover {
-            background-color: #4db348;
+            background-color: #3fd858;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(94, 211, 98, 0.3);
+            box-shadow: 0 4px 12px rgba(79, 236, 105, 0.3);
         }
 
         .btn-secondary {
             background-color: var(--color-white);
-            color: var(--color-primary);
+            color: var(--color-primary-dark);
             border: 2px solid var(--color-white);
         }
 
@@ -159,15 +167,38 @@
 
         /* Hero */
         .hero {
-            background: linear-gradient(135deg, var(--color-primary) 0%, #2a6ba8 100%);
+            background-color: var(--color-primary);
             color: var(--color-white);
             padding: 80px 0;
-            text-align: center;
+        }
+
+        .hero .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 560px;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
         }
 
         .hero-title {
-            font-size: 56px;
-            font-weight: 700;
+            font-size: 42px;
+            font-weight: 500;
             line-height: 1.2;
             margin-bottom: 20px;
         }
@@ -176,34 +207,43 @@
             font-size: 18px;
             line-height: 1.6;
             margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
             opacity: 0.95;
         }
 
         .hero-buttons {
             display: flex;
+            flex-direction: column;
             gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 900px) {
+            .hero .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero-buttons {
+                align-items: center;
+            }
         }
 
         @media (max-width: 768px) {
             .hero-title {
-                font-size: 36px;
+                font-size: 32px;
             }
 
             .hero-description {
                 font-size: 16px;
             }
 
-            .hero-buttons {
-                flex-direction: column;
-            }
-
             .btn {
                 width: 100%;
+                justify-content: center;
             }
         }
 
@@ -1090,7 +1130,7 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">Eu Confio</a>
+                <a href="/" class="logo"><img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bd5e98b5ee80ba2d0b3389.png" alt="Logo Eu Confio App" style="height: 40px;"></a>
                 <nav class="nav">
                     <a href="#section-como-funciona" class="nav-link">Como funciona</a>
                 </nav>
@@ -1102,18 +1142,24 @@
     <!-- 2. Parceiro Institucional -->
     <div class="partner-section">
         <div class="container">
-            Parceiro institucional: <strong>SEBRAE</strong>
+            Parceiro institucional:
+            <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bd8e6ead14008f15a093f5.webp" alt="SEBRAE" style="height: 32px; margin-left: 10px;">
         </div>
     </div>
 
     <!-- 3. Hero Section -->
     <section class="hero" id="hero">
         <div class="container">
-            <h1 class="hero-title">Muito além de indicar. Confiar.</h1>
-            <p class="hero-description">A Eu Confio é uma comunidade que transforma confiança em oportunidade, conectando pessoas e profissionais por meio de indicações estruturadas.</p>
-            <div class="hero-buttons">
-                <button class="btn btn-secondary" onclick="scrollToSection('download')">☁ Baixar App</button>
-                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero indicar e ganhar', section: 'hero'})">➕ Quero indicar e ganhar</button>
+            <div class="hero-content">
+                <h1 class="hero-title">Muito além de indicar. Confiar.</h1>
+                <p class="hero-description">A Eu Confio é uma comunidade que transforma confiança em oportunidade, conectando pessoas e profissionais por meio de indicações estruturadas.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-secondary" onclick="scrollToSection('download')">☁ Baixar App</button>
+                    <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero indicar e ganhar', section: 'hero'})">➕ Quero indicar e ganhar</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bd5ed1aecaa02def05502f.png" alt="Eu Confio o app que facilita a sua vida">
             </div>
         </div>
     </section>
@@ -1212,10 +1258,12 @@
             </div>
             <div class="personas-grid">
                 <div class="persona-card">
+                    <img src="https://assets.cdn.filesafe.space/Jh5tEP8YjdrNE3exGstz/media/63f7a06c51cfc44184183d9d.png" alt="Quero indicar profissionais" style="width: 60px; height: 60px; margin-bottom: 20px;">
                     <h3>Quero indicar profissionais</h3>
                     <p>Ajude amigos e conhecidos recomendando profissionais de confiança e seja recompensado por isso. Boas indicações fortalecem reputações e ajudam outras pessoas a encontrar quem resolve.</p>
                 </div>
                 <div class="persona-card">
+                    <img src="https://assets.cdn.filesafe.space/Jh5tEP8YjdrNE3exGstz/media/63f7a28886a3acfc589c503a.png" alt="Quero contratar um serviço" style="width: 60px; height: 60px; margin-bottom: 20px;">
                     <h3>Quero contratar um serviço</h3>
                     <p>Encontre profissionais indicados por pessoas reais dentro da comunidade. Mais segurança, mais confiança e melhores conexões. Clientes satisfeitos geram crescimento baseado em confiança.</p>
                 </div>
@@ -1571,7 +1619,7 @@
             </div>
 
             <div class="faq-cta">
-                <a href="https://wa.me/5511980359587?text=Olá!%20Eu%20Confio.%20Estou%20com%20dúvida%20e%20gostaria%20de%20conversar%20com%20seu%20time." target="_blank" onclick="trackEvent('whatsapp_click', {cta_label: 'Tire sua dúvida com nosso time', cta_location: 'faq_section'})">
+                <a href="https://wa.me/5511980359587?text=Ol%C3%A1!%20Estava%20vendo%20o%20Eu%20Confio%20e%20tenho%20algumas%20d%C3%BAvidas.%20Pode%20me%20ajudar%20a%20entender%20melhor%20como%20funciona%3F" target="_blank" onclick="trackEvent('whatsapp_click', {cta_label: 'Tire sua dúvida com nosso time', cta_location: 'faq_section'})">
                     💬 Tire sua dúvida com nosso time
                 </a>
             </div>
@@ -1583,7 +1631,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">Eu Confio</div>
+                    <a href="/"><img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bd5e98b5ee80ba2d0b3389.png" alt="Logo aplicativo eu confio" style="height: 36px;"></a>
                 </div>
                 <div class="footer-section">
                     <div class="footer-contact">
@@ -1594,7 +1642,7 @@
                 <div class="footer-section">
                     <div class="footer-contact">
                         <strong>WhatsApp:</strong><br>
-                        <a href="https://wa.me/5511980359587?text=Olá!%20Eu%20Confio." onclick="trackEvent('whatsapp_click', {cta_label: 'WhatsApp Footer', cta_location: 'footer_social'})">+55 11 98035-9587</a>
+                        <a href="https://wa.me/5511980359587?text=Ol%C3%A1!%20Quero%20entender%20melhor%20como%20funciona%20o%20Eu%20Confio%20e%20como%20posso%20come%C3%A7ar." onclick="trackEvent('whatsapp_click', {cta_label: 'WhatsApp Footer', cta_location: 'footer_social'})">+55 11 98035-9587</a>
                     </div>
                 </div>
                 <div class="footer-section">

@@ -4,9 +4,9 @@
 
 :root {
     /* Cores */
-    --color-primary: #1E5A96;
-    --color-primary-dark: #0C2340;
-    --color-secondary: #5ED362;
+    --color-primary: #1567B9;
+    --color-primary-dark: #1C1B4D;
+    --color-secondary: #4FEC69;
     --color-bg-light: #F5F5F5;
     --color-white: #FFFFFF;
     --color-text: #333333;
@@ -14,7 +14,7 @@
     --color-border: #E0E0E0;
 
     /* Tipografia */
-    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    --font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     --font-size-xs: 12px;
     --font-size-sm: 14px;
     --font-size-base: 16px;
