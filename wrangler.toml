@@ -1,0 +1,24 @@
+name = "euconfio-site"
+type = "javascript"
+account_id = ""
+workers_dev = true
+routes = []
+zone_id = ""
+
+compatibility_date = "2024-08-01"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+routes = [
+  { pattern = "euconfio.com.br", zone_id = "" },
+  { pattern = "www.euconfio.com.br", zone_id = "" }
+]
+
+[env.staging]
+routes = [
+  { pattern = "dev.euconfio.com.br", zone_id = "" }
+]
+
+[build]
+command = "npm install"
+watch_paths = []

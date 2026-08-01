@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre profissionais confiáveis ou ganhe renda com indicações. O Eu Confio conecta pessoas através da confiança e oportunidades reais.">
+    <meta name="keywords" content="indicação de serviços, profissionais confiáveis, renda extra indicação, ganhar dinheiro indicando, plataforma de indicação, Eu Confio app, indicação profissional Brasil">
+    <meta name="author" content="Eu Confio">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Eu Confio | Indicações confiáveis e renda extra">
+    <meta property="og:description" content="Encontre profissionais confiáveis ou ganhe renda com indicações. O Eu Confio conecta pessoas através da confiança e oportunidades reais.">
+    <meta property="og:image" content="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69c285603e56b91695b27603.jpg">
+    <meta property="og:type" content="website">
+    <meta property="twitter:type" content="website">
+    <link rel="canonical" href="https://euconfio.app/">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <title>Eu Confio | Indicações confiáveis e renda extra</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+    <style>
+        :root {
+            --color-primary: #1E5A96;
+            --color-primary-dark: #0C2340;
+            --color-accent: #5ED362;
+            --color-bg-light: #F5F5F5;
+            --color-text-primary: #333333;
+            --color-text-secondary: #666666;
+            --color-white: #FFFFFF;
+            --color-border: #E0E0E0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            background-color: var(--color-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background-color: var(--color-primary);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav {
+            flex: 1;
+            text-align: center;
+        }
+
+        .nav-link {
+            color: var(--color-white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-link:hover {
+            opacity: 0.8;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 15px 40px;
+            border-radius: 30px;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-primary-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: #4db348;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(94, 211, 98, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+            border: 2px solid var(--color-white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-bg-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-tertiary {
+            background-color: transparent;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+
+        .btn-tertiary:hover {
+            background-color: rgba(30, 90, 150, 0.05);
+        }
+
+        /* Institucional Partner */
+        .partner-section {
+            background-color: var(--color-bg-light);
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        .partner-section img {
+            height: 30px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #2a6ba8 100%);
+            color: var(--color-white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 36px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        /* Diferenciais */
+        .diferenciais {
+            background-color: var(--color-white);
+            padding: 60px 0;
+        }
+
+        .diferenciais-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .diferencial-card {
+            padding: 30px;
+        }
+
+        .diferencial-icon {
+            font-size: 32px;
+            color: var(--color-primary);
+            margin-bottom: 15px;
+        }
+
+        .diferencial-text {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-primary-dark);
+            text-transform: uppercase;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+        }
+
+        /* O que é */
+        .o-que-e {
+            background-color: var(--color-bg-light);
+            padding: 80px 0;
+        }
+
+        .o-que-e h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .o-que-e-descricao {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+            text-align: center;
+        }
+
+        .propostas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .proposta-card {
+            background-color: var(--color-white);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .proposta-card-icon {
+            font-size: 32px;
+            color: var(--color-primary);
+            margin-bottom: 15px;
+        }
+
+        .proposta-card p {
+            color: var(--color-text-secondary);
+            font-size: 16px;
+        }
+
+        .o-que-e-cta {
+            text-align: center;
+        }
+
+        /* Como Funciona */
+        .como-funciona {
+            background-color: var(--color-white);
+            padding: 80px 0;
+            scroll-margin-top: 80px;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .funciona-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .funciona-card {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .funciona-card h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .funciona-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .funciona-card-label {
+            font-size: 13px;
+            opacity: 0.8;
+            font-weight: 600;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .como-funciona-cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Personas */
+        .personas {
+            background-color: var(--color-white);
+            padding: 80px 0;
+        }
+
+        .personas-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .personas-hashtag {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .personas-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            margin-bottom: 20px;
+        }
+
+        .personas-description {
+            font-size: 16px;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .personas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .persona-card {
+            background-color: var(--color-bg-light);
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .persona-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            margin-bottom: 15px;
+        }
+
+        .persona-card p {
+            font-size: 16px;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        /* App Showcase */
+        .app-showcase {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #2a6ba8 100%);
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px),
+                repeating-linear-gradient(90deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
+            color: var(--color-white);
+            padding: 80px 0;
+        }
+
+        .app-showcase h2 {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .app-showcase-description {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .screenshot-card {
+            background-color: var(--color-white);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .screenshot-card p {
+            color: var(--color-primary-dark);
+            font-weight: 600;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .app-showcase-cta {
+            text-align: center;
+        }
+
+        /* Empresas */
+        .empresas {
+            background-color: var(--color-white);
+            padding: 80px 0;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background-color: var(--color-bg-light);
+            color: var(--color-text-secondary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .beneficios-card {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .beneficios-card h3 {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .beneficio-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            gap: 12px;
+        }
+
+        .beneficio-item::before {
+            content: "✓";
+            color: var(--color-accent);
+            font-weight: 700;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .beneficio-item p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .empresas-description {
+            text-align: center;
+            font-size: 16px;
+            color: var(--color-text-secondary);
+            margin-bottom: 30px;
+        }
+
+        /* Pessoas */
+        .pessoas {
+            background-color: var(--color-white);
+            padding: 80px 0;
+        }
+
+        /* Para Quem */
+        .para-quem {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 80px 0;
+        }
+
+        .para-quem h2 {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .para-quem-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .para-quem-card {
+            background-color: var(--color-white);
+            color: var(--color-text-primary);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .para-quem-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .para-quem-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--color-text-secondary);
+        }
+
+        .para-quem-destaque {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .para-quem-cta {
+            text-align: center;
+        }
+
+        /* Renda Extra */
+        .renda-extra {
+            background-color: var(--color-bg-light);
+            padding: 80px 0;
+        }
+
+        .renda-extra h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .renda-extra-intro {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+            text-align: center;
+        }
+
+        .passos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .passo {
+            text-align: center;
+        }
+
+        .passo-numero {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+        }
+
+        .passo-titulo {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .passo-descricao {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        .renda-extra-cta {
+            text-align: center;
+        }
+
+        /* Simulação */
+        .simulacao {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #2a6ba8 100%);
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px),
+                repeating-linear-gradient(90deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
+            color: var(--color-white);
+            padding: 80px 0;
+        }
+
+        .simulacao h2 {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .simulacao-description {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        .cenarios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .cenario-card {
+            background-color: var(--color-white);
+            color: var(--color-text-primary);
+            padding: 30px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cenario-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .cenario-titulo {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .cenario-conteudo {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        .cenario-conteudo p {
+            margin-bottom: 10px;
+        }
+
+        .cenario-arrow {
+            font-size: 16px;
+            color: var(--color-primary);
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        /* Comunidade */
+        .comunidade {
+            background-color: var(--color-white);
+            padding: 80px 0;
+        }
+
+        .comunidade h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .comunidade-descricao {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+            text-align: center;
+        }
+
+        .comunidade-destaque {
+            background-color: var(--color-bg-light);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .comunidade-valores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .valor-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .valor-check {
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 24px;
+            flex-shrink: 0;
+            margin-top: -3px;
+        }
+
+        .valor-texto {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            line-height: 1.4;
+        }
+
+        .comunidade-cta {
+            text-align: center;
+        }
+
+        /* Taxas */
+        .taxas {
+            background-color: var(--color-bg-light);
+            padding: 80px 0;
+        }
+
+        .taxas h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .taxas-descricao {
+            text-align: center;
+            font-size: 16px;
+            color: var(--color-text-secondary);
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .taxas-info {
+            background-color: var(--color-white);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tabela-taxas {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .tabela-taxas th,
+        .tabela-taxas td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .tabela-taxas th {
+            background-color: var(--color-bg-light);
+            font-weight: 700;
+            color: var(--color-primary-dark);
+        }
+
+        .tabela-taxas td {
+            color: var(--color-text-secondary);
+        }
+
+        .bandeiras {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .bandeira {
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Download */
+        .download {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .download h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .download-intro {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* FAQ */
+        .faq {
+            background-color: var(--color-white);
+            padding: 80px 0;
+        }
+
+        .faq h2 {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion {
+            margin-bottom: 15px;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            background-color: var(--color-bg-light);
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--color-text-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background-color: #eaeaea;
+        }
+
+        .accordion-arrow {
+            color: var(--color-primary);
+            font-size: 18px;
+            font-weight: 700;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion.active .accordion-arrow {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            display: none;
+            background-color: var(--color-white);
+            padding: 20px;
+            border-top: 1px solid var(--color-border);
+            font-size: 16px;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+        }
+
+        .accordion.active .accordion-content {
+            display: block;
+        }
+
+        .faq-cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .faq-cta a {
+            color: var(--color-primary);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .faq-cta a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-bg-light);
+            padding: 60px 0 30px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section {
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 20px;
+        }
+
+        .footer-contact {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .footer-contact a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-link {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .social-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer-divider {
+            border-top: 1px solid var(--color-border);
+            margin: 30px 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 12px;
+            color: var(--color-text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 32px;
+            }
+
+            .diferenciais-grid,
+            .propostas-grid,
+            .funciona-grid,
+            .personas-grid,
+            .screenshots-grid,
+            .para-quem-cards,
+            .passos-grid,
+            .cenarios-grid,
+            .comunidade-valores {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- GTM noscript -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGSZ98WB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- 1. Header/Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">Eu Confio</a>
+                <nav class="nav">
+                    <a href="#section-como-funciona" class="nav-link">Como funciona</a>
+                </nav>
+                <button class="btn btn-secondary" onclick="scrollToSection('download')">Baixar App</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Parceiro Institucional -->
+    <div class="partner-section">
+        <div class="container">
+            Parceiro institucional: <strong>SEBRAE</strong>
+        </div>
+    </div>
+
+    <!-- 3. Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1 class="hero-title">Muito além de indicar. Confiar.</h1>
+            <p class="hero-description">A Eu Confio é uma comunidade que transforma confiança em oportunidade, conectando pessoas e profissionais por meio de indicações estruturadas.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-secondary" onclick="scrollToSection('download')">☁ Baixar App</button>
+                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero indicar e ganhar', section: 'hero'})">➕ Quero indicar e ganhar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Diferenciais -->
+    <section class="diferenciais" id="diferenciais">
+        <div class="container">
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">✓</div>
+                    <div class="diferencial-text">COMUNIDADE<br>BASEADA EM<br>CONFIANÇA</div>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">✓</div>
+                    <div class="diferencial-text">INDICAÇÕES<br>QUE GERAM<br>OPORTUNIDADES</div>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">✓</div>
+                    <div class="diferencial-text">CONEXÕES<br>REAIS ENTRE<br>PESSOAS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. O que é o Eu Confio? -->
+    <section class="o-que-e" id="o-que-e">
+        <div class="container">
+            <h2>O que é o Eu Confio?</h2>
+            <div class="o-que-e-descricao">
+                <p>A Eu Confio é uma plataforma que transforma algo que sempre existiu em uma oportunidade real: a boa indicação. Aqui, pessoas encontram profissionais confiáveis. Profissionais ganham visibilidade por meio da reputação. E boas conexões passam a gerar valor para todos os lados.</p>
+                <p style="margin-top: 20px;">A proposta é simples:</p>
+            </div>
+            <div class="propostas-grid">
+                <div class="proposta-card">
+                    <div class="proposta-card-icon">👤</div>
+                    <p>Menos risco na hora de contratar.</p>
+                </div>
+                <div class="proposta-card">
+                    <div class="proposta-card-icon">✓</div>
+                    <p>Mais confiança na hora de indicar.</p>
+                </div>
+                <div class="proposta-card">
+                    <div class="proposta-card-icon">🚀</div>
+                    <p>Mais oportunidade para quem entrega de verdade.</p>
+                </div>
+            </div>
+            <div class="o-que-e-cta">
+                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero usar o Eu Confio', section: 'o-que-e'})">Quero usar o Eu Confio</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Como Funciona -->
+    <section class="como-funciona" id="section-como-funciona">
+        <div class="container">
+            <h2 class="section-title">Como Funciona</h2>
+            <div class="funciona-grid">
+                <div class="funciona-card">
+                    <h3>INDIQUE</h3>
+                    <p>Compartilhe profissionais de confiança.</p>
+                    <div class="funciona-card-label">Para Profissionais</div>
+                    <p style="margin-top: 15px;">Ser indicado e crescer com reputação.</p>
+                </div>
+                <div class="funciona-card">
+                    <h3>CONECTE</h3>
+                    <p>Pessoas encontram quem resolve.</p>
+                    <div class="funciona-card-label">Fortaleça Reputações</div>
+                    <p style="margin-top: 15px;">Boas indicações geram oportunidades.</p>
+                </div>
+                <div class="funciona-card">
+                    <h3>GANHE</h3>
+                    <p>Transforme indicações em valor.</p>
+                    <div class="funciona-card-label">Renda Estruturada</div>
+                    <p style="margin-top: 15px;">Boas conexões geram recompensas.</p>
+                </div>
+                <div class="funciona-card">
+                    <h3>CRESÇA</h3>
+                    <p>Construa sua reputação na plataforma.</p>
+                    <div class="funciona-card-label">Comunidade de Confiança</div>
+                    <p style="margin-top: 15px;">Crescimento baseado em reputação.</p>
+                </div>
+            </div>
+            <div class="como-funciona-cta">
+                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero Começar', section: 'como-funciona'})">Quero Começar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Personas / #EuConfio -->
+    <section class="personas" id="personas">
+        <div class="container">
+            <div class="personas-header">
+                <div class="personas-hashtag">#EuConfio</div>
+                <h2 class="personas-title">Como você quer usar o Eu Confio?</h2>
+                <p class="personas-description">O Eu Confio nasceu para valorizar algo que sempre existiu: boas indicações.</p>
+            </div>
+            <div class="personas-grid">
+                <div class="persona-card">
+                    <h3>Quero indicar profissionais</h3>
+                    <p>Ajude amigos e conhecidos recomendando profissionais de confiança e seja recompensado por isso. Boas indicações fortalecem reputações e ajudam outras pessoas a encontrar quem resolve.</p>
+                </div>
+                <div class="persona-card">
+                    <h3>Quero contratar um serviço</h3>
+                    <p>Encontre profissionais indicados por pessoas reais dentro da comunidade. Mais segurança, mais confiança e melhores conexões. Clientes satisfeitos geram crescimento baseado em confiança.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero testar o app agora', section: 'personas'})">Quero testar o app agora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. App Showcase -->
+    <section class="app-showcase" id="app-showcase">
+        <div class="container">
+            <h2>Veja como funciona na prática dentro do app.</h2>
+            <p class="app-showcase-description">A navegação é simples, direta e pensada para facilitar conexões reais entre pessoas e profissionais.</p>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bdacf5b54f0df1b75479a4.webp" alt="Perfil de Usuário">
+                    <p>Perfil de Usuário</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bdacf51e97c48988826e1b.webp" alt="Perfil de Negócios">
+                    <p>Perfil de Negócios</p>
+                </div>
+                <div class="screenshot-card">
+                    <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bdacf5fd438862cf4b35a6.webp" alt="Terceira tela">
+                    <p>Conexões</p>
+                </div>
+            </div>
+            <div class="app-showcase-cta">
+                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero testar o app agora', section: 'app-showcase'})">Quero testar o app agora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Empresas -->
+    <section class="empresas" id="indique">
+        <div class="container">
+            <div class="section-tag">EMPRESAS</div>
+            <h2 class="section-title">Transforme clientes em promotores do seu negócio</h2>
+            <p class="empresas-description">O Eu Confio cria um ciclo natural de crescimento baseado em confiança.</p>
+            <div class="beneficios-card">
+                <h3>RECEBA INDICAÇÕES</h3>
+                <div class="beneficio-item">
+                    <p>Novas indicações qualificadas</p>
+                </div>
+                <div class="beneficio-item">
+                    <p>Aumento de vendas</p>
+                </div>
+                <div class="beneficio-item">
+                    <p>Fortalecimento da reputação</p>
+                </div>
+                <div class="beneficio-item">
+                    <p>Crescimento baseado em confiança</p>
+                </div>
+            </div>
+            <p class="empresas-description">Clientes satisfeitos podem se tornar o maior canal de crescimento do seu negócio.</p>
+            <div style="text-align: center;">
+                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero gerar mais vendas por indicação', section: 'empresas'})">Quero gerar mais vendas por indicação</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Pessoas -->
+    <section class="pessoas" id="pessoas">
+        <div class="container">
+            <div class="section-tag">PESSOAS</div>
+            <h2 class="section-title">Receba e indique profissionais de confiança</h2>
+            <p class="empresas-description">Quero contratar um serviço</p>
+            <div class="beneficios-card">
+                <h3>QUERO CONTRATAR UM SERVIÇO</h3>
+                <div class="beneficio-item">
+                    <p>Receba profissionais de confiança</p>
+                </div>
+                <div class="beneficio-item">
+                    <p>Ajude amigos</p>
+                </div>
+                <div class="beneficio-item">
+                    <p>Participe de uma comunidade ativa</p>
+                </div>
+                <div class="beneficio-item">
+                    <p>Receba recompensas por negócios fechados</p>
+                </div>
+            </div>
+            <p class="empresas-description">Boas indicações sempre existiram. Agora elas também podem gerar recompensas.</p>
+            <div style="text-align: center;">
+                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero gerar mais vendas por indicação', section: 'pessoas'})">Quero gerar mais vendas por indicação</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Para quem é? -->
+    <section class="para-quem" id="para-quem">
+        <div class="container">
+            <h2>Para quem é?</h2>
+            <div class="para-quem-cards">
+                <div class="para-quem-card">
+                    <h3>PARA PESSOAS</h3>
+                    <p>Encontrar profissionais confiáveis.</p>
+                    <p style="margin-top: 15px; border-top: 1px solid var(--color-border); padding-top: 15px;">Para Profissionais: Ser indicado e crescer com reputação.</p>
+                </div>
+                <div class="para-quem-card">
+                    <h3>PARA PROFISSIONAIS</h3>
+                    <p>Ser indicado e construir sua reputação.</p>
+                    <p style="margin-top: 15px; border-top: 1px solid var(--color-border); padding-top: 15px;">Para Pessoas: Encontrar profissionais confiáveis.</p>
+                </div>
+            </div>
+            <div class="para-quem-destaque">
+                A confiança é a moeda mais valiosa da nova economia.
+            </div>
+            <div class="para-quem-cta">
+                <button class="btn btn-secondary" onclick="trackEvent('cta_button_click', {button_text: 'Quero fazer parte', section: 'para-quem'})">Quero fazer parte</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Renda Extra -->
+    <section class="renda-extra" id="renda-extra">
+        <div class="container">
+            <h2>💰 Transforme boas conexões em renda extra</h2>
+            <div class="renda-extra-intro">
+                <p>Quando você indica um profissional e o negócio acontece, você pode receber uma recompensa por essa conexão. A Eu Confio valoriza quem conecta pessoas de confiança. Boas indicações geram oportunidades e também podem gerar ganhos para quem indicou.</p>
+            </div>
+            <div class="passos-grid">
+                <div class="passo">
+                    <div class="passo-numero">1</div>
+                    <div class="passo-titulo">Indique um profissional confiável</div>
+                    <div class="passo-descricao">Compartilhe com alguém que precisa de um serviço.</div>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">2</div>
+                    <div class="passo-titulo">O negócio acontece</div>
+                    <div class="passo-descricao">O cliente fecha com o profissional indicado.</div>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">3</div>
+                    <div class="passo-titulo">Você pode receber uma recompensa</div>
+                    <div class="passo-descricao">A indicação gera valor para todos.</div>
+                </div>
+            </div>
+            <div class="renda-extra-cta">
+                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero transformar minhas indicações em renda', section: 'renda-extra'})">Quero transformar minhas indicações em renda</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. Simulação de Ganhos -->
+    <section class="simulacao" id="simulacao">
+        <div class="container">
+            <h2>Simulação de ganhos</h2>
+            <p class="simulacao-description">Você já indica naturalmente no seu dia a dia. A diferença é que agora essa conexão pode gerar valor de forma estruturada dentro de uma comunidade baseada em confiança.</p>
+            <div class="cenarios-grid">
+                <div class="cenario-card">
+                    <div class="cenario-titulo">CENÁRIO 1</div>
+                    <div class="cenario-conteudo">
+                        <p>• Você indica um profissional.</p>
+                        <p>• O negócio acontece.</p>
+                        <p>• Você participa do valor gerado por essa conexão.</p>
+                        <div class="cenario-arrow">↓</div>
+                    </div>
+                </div>
+                <div class="cenario-card">
+                    <div class="cenario-titulo">CENÁRIO 2</div>
+                    <div class="cenario-conteudo">
+                        <p>• Você indica mais de uma vez.</p>
+                        <p>• Boas conexões começam a se repetir.</p>
+                        <p>• As oportunidades também.</p>
+                        <div class="cenario-arrow">↓</div>
+                    </div>
+                </div>
+                <div class="cenario-card">
+                    <div class="cenario-titulo">CENÁRIO 3</div>
+                    <div class="cenario-conteudo">
+                        <p>• Quanto mais confiança existe na indicação...</p>
+                        <p>• ...maior o potencial de continuidade...</p>
+                        <p>• ...dentro da comunidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. Comunidade de Profissionais -->
+    <section class="comunidade" id="comunidade">
+        <div class="container">
+            <h2>Comunidade de profissionais</h2>
+            <p class="comunidade-descricao">A Eu Confio não é espaço para indicação vazia. A base da comunidade é experiência real, responsabilidade na conexão e qualidade no que é indicado.</p>
+            <div class="comunidade-destaque">
+                Aqui, confiança não é detalhe, é filtro.
+            </div>
+            <p class="comunidade-descricao" style="margin-bottom: 30px;">Se está no Eu Confio, a expectativa é clara:</p>
+            <div class="comunidade-valores">
+                <div class="valor-item">
+                    <div class="valor-check">✓</div>
+                    <div class="valor-texto">Indicação real</div>
+                </div>
+                <div class="valor-item">
+                    <div class="valor-check">✓</div>
+                    <div class="valor-texto">Relação transparente</div>
+                </div>
+                <div class="valor-item">
+                    <div class="valor-check">✓</div>
+                    <div class="valor-texto">Oportunidade construída sobre reputação</div>
+                </div>
+            </div>
+            <div class="comunidade-cta">
+                <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero fazer parte da comunidade', section: 'comunidade'})">Quero fazer parte da comunidade</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. Taxas + Recebimento -->
+    <section class="taxas" id="taxas">
+        <div class="container">
+            <h2>💳 Taxas + recebimento em 15 dias</h2>
+            <p class="taxas-descricao">A transparência faz parte da confiança. Por isso, a lógica de recebimento precisa ser clara desde o início. O prazo de recebimento é de até 15 dias.</p>
+            <div class="taxas-info">
+                <h3 style="text-align: center; color: var(--color-primary-dark); margin-bottom: 25px; font-size: 20px;">Parcelamento no Cartão de Crédito em até 12x</h3>
+                <table class="tabela-taxas">
+                    <thead>
+                        <tr>
+                            <th>Parcelamento</th>
+                            <th>Taxa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>À vista</td>
+                            <td>5,40%</td>
+                        </tr>
+                        <tr>
+                            <td>2x</td>
+                            <td>7,84%</td>
+                        </tr>
+                        <tr>
+                            <td>3x</td>
+                            <td>9,15%</td>
+                        </tr>
+                        <tr>
+                            <td>4x</td>
+                            <td>10,46%</td>
+                        </tr>
+                        <tr>
+                            <td>5x</td>
+                            <td>11,77%</td>
+                        </tr>
+                        <tr>
+                            <td>6x</td>
+                            <td>13,08%</td>
+                        </tr>
+                        <tr>
+                            <td>7x</td>
+                            <td>14,51%</td>
+                        </tr>
+                        <tr>
+                            <td>8x</td>
+                            <td>15,82%</td>
+                        </tr>
+                        <tr>
+                            <td>9x</td>
+                            <td>17,13%</td>
+                        </tr>
+                        <tr>
+                            <td>10x</td>
+                            <td>18,44%</td>
+                        </tr>
+                        <tr>
+                            <td>11x</td>
+                            <td>19,75%</td>
+                        </tr>
+                        <tr>
+                            <td>12x</td>
+                            <td>21,06%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="bandeiras">
+                    <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69c18151a894ce418a90dc90.webp" alt="Bandeiras de cartão" class="bandeira" style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16. Download -->
+    <section class="download" id="download">
+        <div class="container">
+            <h2>☁ Baixe o Aplicativo Eu Confio</h2>
+            <div class="download-intro">
+                <p>Comece a fazer parte da comunidade. Encontre profissionais confiáveis, fortaleça boas conexões e transforme confiança em oportunidade.</p>
+                <p style="margin-top: 15px;">Você já tem conexões. Agora pode transformar isso em oportunidade.</p>
+            </div>
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/br/app/eu-confio-facility/id6749334683" class="btn btn-secondary" target="_blank" onclick="trackEvent('app_download_click', {store: 'ios'})">🍎 App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.euconfio.app" class="btn btn-secondary" target="_blank" onclick="trackEvent('app_download_click', {store: 'android'})">▶ Google Play</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 17. FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Perguntas frequentes</h2>
+            <div class="faq-container">
+                <div class="accordion">
+                    <div class="accordion-header">
+                        Em quanto tempo recebo?
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        O prazo de recebimento é de até 15 dias.
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        Como funciona a indicação?
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        Você indica um profissional confiável, o negócio acontece e essa conexão pode gerar valor dentro da plataforma.
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        Quem pode usar o Eu Confio?
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        Pessoas que querem encontrar profissionais confiáveis, profissionais que desejam crescer com reputação e negócios que querem estruturar indicações.
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        Posso indicar qualquer profissional?
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        A proposta da Eu Confio é valorizar indicações com responsabilidade. A base da comunidade é confiança e experiência real.
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        O app é para quem quer renda extra?
+                        <span class="accordion-arrow">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        Sim. A plataforma também cria oportunidade para quem deseja transformar boas conexões em renda extra de forma responsável.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <a href="https://wa.me/5511980359587?text=Olá!%20Eu%20Confio.%20Estou%20com%20dúvida%20e%20gostaria%20de%20conversar%20com%20seu%20time." target="_blank" onclick="trackEvent('whatsapp_click', {cta_label: 'Tire sua dúvida com nosso time', cta_location: 'faq_section'})">
+                    💬 Tire sua dúvida com nosso time
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18. Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">Eu Confio</div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-contact">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:falecom@euconfio.com.br">falecom@euconfio.com.br</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-contact">
+                        <strong>WhatsApp:</strong><br>
+                        <a href="https://wa.me/5511980359587?text=Olá!%20Eu%20Confio." onclick="trackEvent('whatsapp_click', {cta_label: 'WhatsApp Footer', cta_location: 'footer_social'})">+55 11 98035-9587</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/euconfio.app/" class="social-link" target="_blank" onclick="trackEvent('social_click', {platform: 'instagram', location: 'footer'})">@euconfio.app</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                © 2026 Eu Confio. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- GTM Script -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PGSZ98WB');
+    </script>
+
+    <!-- Analytics Events -->
+    <script src="assets/js/analytics-events.js?v=2" defer></script>
+
+    <!-- Utility Functions -->
+    <script>
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function trackEvent(eventName, eventData = {}) {
+            if (window.dataLayer) {
+                window.dataLayer.push({
+                    event: eventName,
+                    ...eventData
+                });
+            }
+            console.log('Event tracked:', eventName, eventData);
+        }
+
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const accordion = this.parentElement;
+                accordion.classList.toggle('active');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && !href.includes('http')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
