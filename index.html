@@ -140,6 +140,17 @@
             transform: translateY(-2px);
         }
 
+        .btn-outline {
+            background-color: transparent;
+            color: var(--color-white);
+            border: 3px solid var(--color-white);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
         .btn-tertiary {
             background-color: transparent;
             color: var(--color-primary);
@@ -432,19 +443,43 @@
             background-color: var(--color-bg-light);
             padding: 30px;
             border-radius: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .persona-card img {
+            flex-shrink: 0;
+            margin-bottom: 0 !important;
         }
 
         .persona-card h3 {
             font-size: 20px;
             font-weight: 700;
             color: var(--color-primary-dark);
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .persona-card p {
             font-size: 16px;
             color: var(--color-text-secondary);
             line-height: 1.6;
+        }
+
+        .personas-highlight {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            .persona-card {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
         }
 
         /* App Showcase */
@@ -956,25 +991,26 @@
         .accordion {
             margin-bottom: 15px;
             border: 1px solid var(--color-border);
-            border-radius: 8px;
+            border-radius: 16px;
             overflow: hidden;
+            background-color: var(--color-white);
         }
 
         .accordion-header {
-            background-color: var(--color-bg-light);
-            padding: 20px;
+            background-color: var(--color-white);
+            padding: 22px 24px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-weight: 600;
-            font-size: 16px;
-            color: var(--color-text-primary);
+            font-weight: 700;
+            font-size: 17px;
+            color: var(--color-primary-dark);
             transition: background-color 0.3s ease;
         }
 
         .accordion-header:hover {
-            background-color: #eaeaea;
+            background-color: var(--color-bg-light);
         }
 
         .accordion-arrow {
@@ -1004,57 +1040,64 @@
 
         .faq-cta {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
         }
 
         .faq-cta a {
-            color: var(--color-primary);
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 16px;
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            background-color: var(--color-accent);
+            color: var(--color-accent-text);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 15px 32px;
+            border-radius: 75px;
+            transition: all 0.3s ease;
         }
 
         .faq-cta a:hover {
-            text-decoration: underline;
+            background-color: #3fd858;
+            transform: translateY(-2px);
         }
 
         /* Footer */
         footer {
-            background-color: var(--color-bg-light);
-            padding: 60px 0 30px;
-            border-top: 1px solid var(--color-border);
+            background-color: #000000;
+            color: var(--color-white);
+            padding: 40px 0;
         }
 
         .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            margin-bottom: 0;
         }
 
         .footer-section {
-            text-align: center;
+            text-align: left;
         }
 
         .footer-logo {
             font-size: 24px;
             font-weight: 700;
-            color: var(--color-primary);
-            margin-bottom: 20px;
+            color: var(--color-white);
+            margin-bottom: 0;
         }
 
         .footer-contact {
             font-size: 14px;
-            color: var(--color-text-secondary);
+            color: var(--color-white);
             line-height: 1.8;
-            margin-bottom: 15px;
+            margin-bottom: 0;
         }
 
         .footer-contact a {
-            color: var(--color-primary);
+            color: var(--color-white);
             text-decoration: none;
         }
 
@@ -1066,11 +1109,11 @@
             display: flex;
             gap: 20px;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 0;
         }
 
         .social-link {
-            color: var(--color-primary);
+            color: var(--color-white);
             text-decoration: none;
             font-weight: 600;
             font-size: 14px;
@@ -1081,14 +1124,14 @@
         }
 
         .footer-divider {
-            border-top: 1px solid var(--color-border);
-            margin: 30px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            margin: 24px 0;
         }
 
         .footer-bottom {
             text-align: center;
             font-size: 12px;
-            color: var(--color-text-secondary);
+            color: rgba(255, 255, 255, 0.7);
         }
 
         @media (max-width: 768px) {
@@ -1134,7 +1177,7 @@
                 <nav class="nav">
                     <a href="#section-como-funciona" class="nav-link">Como funciona</a>
                 </nav>
-                <button class="btn btn-secondary" onclick="scrollToSection('download')">Baixar App</button>
+                <button class="btn btn-outline" onclick="scrollToSection('download')">Baixar App</button>
             </div>
         </div>
     </header>
@@ -1258,17 +1301,22 @@
             </div>
             <div class="personas-grid">
                 <div class="persona-card">
-                    <img src="https://assets.cdn.filesafe.space/Jh5tEP8YjdrNE3exGstz/media/63f7a06c51cfc44184183d9d.png" alt="Quero indicar profissionais" style="width: 60px; height: 60px; margin-bottom: 20px;">
-                    <h3>Quero indicar profissionais</h3>
-                    <p>Ajude amigos e conhecidos recomendando profissionais de confiança e seja recompensado por isso. Boas indicações fortalecem reputações e ajudam outras pessoas a encontrar quem resolve.</p>
+                    <img src="https://assets.cdn.filesafe.space/Jh5tEP8YjdrNE3exGstz/media/63f7a06c51cfc44184183d9d.png" alt="Quero indicar profissionais" style="width: 60px; height: 60px;">
+                    <div>
+                        <h3>Quero indicar profissionais</h3>
+                        <p>Ajude amigos e conhecidos recomendando profissionais de confiança e seja recompensado por isso. Boas indicações fortalecem reputações e ajudam outras pessoas a encontrar quem resolve.</p>
+                    </div>
                 </div>
                 <div class="persona-card">
-                    <img src="https://assets.cdn.filesafe.space/Jh5tEP8YjdrNE3exGstz/media/63f7a28886a3acfc589c503a.png" alt="Quero contratar um serviço" style="width: 60px; height: 60px; margin-bottom: 20px;">
-                    <h3>Quero contratar um serviço</h3>
-                    <p>Encontre profissionais indicados por pessoas reais dentro da comunidade. Mais segurança, mais confiança e melhores conexões. Clientes satisfeitos geram crescimento baseado em confiança.</p>
+                    <img src="https://assets.cdn.filesafe.space/Jh5tEP8YjdrNE3exGstz/media/63f7a28886a3acfc589c503a.png" alt="Quero contratar um serviço" style="width: 60px; height: 60px;">
+                    <div>
+                        <h3>Quero contratar um serviço</h3>
+                        <p>Encontre profissionais indicados por pessoas reais dentro da comunidade. Mais segurança, mais confiança e melhores conexões.</p>
+                    </div>
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 50px;">
+            <div class="personas-highlight">Clientes satisfeitos geram crescimento baseado em confiança.</div>
+            <div style="text-align: center; margin-top: 40px;">
                 <button class="btn btn-primary" onclick="trackEvent('cta_button_click', {button_text: 'Quero testar o app agora', section: 'personas'})">Quero testar o app agora</button>
             </div>
         </div>
@@ -1631,24 +1679,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <a href="/"><img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bd5e98b5ee80ba2d0b3389.png" alt="Logo aplicativo eu confio" style="height: 36px;"></a>
+                    <a href="/"><img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bd5e98b5ee80ba2d0b3389.png" alt="Logo aplicativo eu confio" style="height: 32px;"></a>
+                </div>
+                <div class="footer-contact">
+                    ✉️ <a href="mailto:falecom@euconfio.com.br">falecom@euconfio.com.br</a>
                 </div>
                 <div class="footer-section">
-                    <div class="footer-contact">
-                        <strong>Email:</strong><br>
-                        <a href="mailto:falecom@euconfio.com.br">falecom@euconfio.com.br</a>
-                    </div>
+                    <a href="https://www.instagram.com/euconfio.app/" class="social-link" target="_blank" onclick="trackEvent('social_click', {platform: 'instagram', location: 'footer'})">📷 euconfio.app</a>
                 </div>
-                <div class="footer-section">
-                    <div class="footer-contact">
-                        <strong>WhatsApp:</strong><br>
-                        <a href="https://wa.me/5511980359587?text=Ol%C3%A1!%20Quero%20entender%20melhor%20como%20funciona%20o%20Eu%20Confio%20e%20como%20posso%20come%C3%A7ar." onclick="trackEvent('whatsapp_click', {cta_label: 'WhatsApp Footer', cta_location: 'footer_social'})">+55 11 98035-9587</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <div class="footer-social">
-                        <a href="https://www.instagram.com/euconfio.app/" class="social-link" target="_blank" onclick="trackEvent('social_click', {platform: 'instagram', location: 'footer'})">@euconfio.app</a>
-                    </div>
+                <div class="footer-contact">
+                    💬 <a href="https://wa.me/5511980359587?text=Ol%C3%A1!%20Quero%20entender%20melhor%20como%20funciona%20o%20Eu%20Confio%20e%20como%20posso%20come%C3%A7ar." onclick="trackEvent('whatsapp_click', {cta_label: 'WhatsApp Footer', cta_location: 'footer_social'})">11 98035-9587</a>
                 </div>
             </div>
             <div class="footer-divider"></div>
