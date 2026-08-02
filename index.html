@@ -391,17 +391,18 @@
         }
 
         .funciona-card {
-            background-color: var(--color-primary);
+            background-color: #2E75BC;
             color: var(--color-white);
-            padding: 32px;
-            border-radius: 15px;
+            padding: 40px 36px;
+            border-radius: 24px;
             text-align: left;
+            min-height: 170px;
         }
 
         .funciona-card h3 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             display: flex;
@@ -413,6 +414,7 @@
             width: 20px;
             height: 20px;
             flex-shrink: 0;
+            color: rgba(255, 255, 255, 0.55);
         }
 
         .funciona-card p {
@@ -515,12 +517,11 @@
 
         /* App Showcase */
         .app-showcase {
-            background: linear-gradient(135deg, var(--color-primary) 0%, #2a6ba8 100%);
-            background-image:
-                repeating-linear-gradient(0deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px),
-                repeating-linear-gradient(90deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
+            background-color: var(--color-primary);
             color: var(--color-white);
             padding: 80px 0;
+            position: relative;
+            overflow: hidden;
         }
 
         .app-showcase h2 {
@@ -548,24 +549,25 @@
         }
 
         .screenshot-card {
-            background-color: var(--color-white);
-            padding: 15px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 24px 20px 20px;
+            border-radius: 24px;
+            text-align: left;
         }
 
         .screenshot-card img {
             width: 100%;
             height: auto;
             border-radius: 8px;
+            display: block;
         }
 
         .screenshot-card p {
-            color: var(--color-primary-dark);
-            font-weight: 600;
-            margin-top: 10px;
-            font-size: 14px;
+            color: var(--color-white);
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
         }
 
         .app-showcase-cta {
@@ -579,16 +581,16 @@
         }
 
         .section-tag {
-            display: inline-block;
-            background-color: var(--color-bg-light);
+            display: block;
+            background-color: transparent;
             color: var(--color-text-secondary);
-            padding: 8px 16px;
-            border-radius: 20px;
+            padding: 0;
             font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
             text-align: center;
-            width: 100%;
         }
 
         .beneficios-card {
@@ -642,14 +644,15 @@
 
         /* Para Quem */
         .para-quem {
-            background-color: var(--color-primary);
-            color: var(--color-white);
+            background-color: var(--color-bg-light);
+            color: var(--color-text-primary);
             padding: 80px 0;
         }
 
         .para-quem h2 {
-            font-size: 40px;
+            font-size: 36px;
             font-weight: 700;
+            color: var(--color-primary-dark);
             text-align: center;
             margin-bottom: 50px;
         }
@@ -666,10 +669,11 @@
             color: var(--color-text-primary);
             padding: 30px;
             border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .para-quem-card h3 {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             color: var(--color-primary-dark);
             margin-bottom: 15px;
@@ -685,8 +689,9 @@
 
         .para-quem-destaque {
             text-align: center;
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--color-text-secondary);
             margin-bottom: 40px;
             line-height: 1.5;
         }
@@ -1352,16 +1357,16 @@
             <p class="app-showcase-description">A navegação é simples, direta e pensada para facilitar conexões reais entre pessoas e profissionais.</p>
             <div class="screenshots-grid">
                 <div class="screenshot-card">
-                    <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bdacf5b54f0df1b75479a4.webp" alt="Perfil de Usuário">
                     <p>Perfil de Usuário</p>
+                    <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bdacf5b54f0df1b75479a4.webp" alt="Perfil de Usuário">
                 </div>
                 <div class="screenshot-card">
-                    <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bdacf51e97c48988826e1b.webp" alt="Perfil de Negócios">
                     <p>Perfil de Negócios</p>
+                    <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bdacf51e97c48988826e1b.webp" alt="Perfil de Negócios">
                 </div>
-                <div class="screenshot-card">
+                <div class="screenshot-card" style="border: none; padding-top: 60px;">
                     <img src="https://assets.cdn.filesafe.space/b90Iz1tq2URKQanTBJ9p/media/69bdacf5fd438862cf4b35a6.webp" alt="Terceira tela">
-                    <p>Conexões</p>
+                    <p style="text-align:center; margin-top: 15px;">Conexões</p>
                 </div>
             </div>
             <div class="app-showcase-cta">
@@ -1454,7 +1459,7 @@
     <!-- 12. Renda Extra -->
     <section class="renda-extra" id="renda-extra">
         <div class="container">
-            <h2>💰 Transforme boas conexões em renda extra</h2>
+            <h2>Transforme boas conexões em renda extra</h2>
             <div class="renda-extra-intro">
                 <p>Quando você indica um profissional e o negócio acontece, você pode receber uma recompensa por essa conexão. A Eu Confio valoriza quem conecta pessoas de confiança. Boas indicações geram oportunidades e também podem gerar ganhos para quem indicou.</p>
             </div>
@@ -1549,7 +1554,7 @@
     <!-- 15. Taxas + Recebimento -->
     <section class="taxas" id="taxas">
         <div class="container">
-            <h2>💳 Taxas + recebimento em 15 dias</h2>
+            <h2>Taxas + recebimento em 15 dias</h2>
             <p class="taxas-descricao">A transparência faz parte da confiança. Por isso, a lógica de recebimento precisa ser clara desde o início. O prazo de recebimento é de até 15 dias.</p>
             <div class="taxas-info">
                 <h3 style="text-align: center; color: var(--color-primary-dark); margin-bottom: 25px; font-size: 20px;">Parcelamento no Cartão de Crédito em até 12x</h3>
