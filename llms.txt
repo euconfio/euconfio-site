@@ -11,7 +11,7 @@ Eu Confio é um aplicativo brasileiro (disponível para iOS e Android) focado em
 ## Aplicativo
 
 - [App Store](https://apps.apple.com/br/app/eu-confio-facility/id6749334683): Baixar o Eu Confio para iOS.
-- [Google Play](https://play.google.com/store/apps/details?id=com.euconfio.app): Baixar o Eu Confio para Android.
+- [Google Play](https://play.google.com/store/apps/details?id=facility.alphacode.com.br): Baixar o Eu Confio para Android.
 
 ## Contato
 
