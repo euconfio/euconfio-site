@@ -279,7 +279,7 @@
             }
 
             .hero-description {
-                font-size: 16px;
+                font-size: 19px;
             }
 
             .btn {
@@ -297,10 +297,11 @@
 
         .diferenciais-grid {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-            gap: 12px 48px;
+            gap: 12px 32px;
+            overflow-x: auto;
         }
 
         .diferencial-card {
@@ -334,8 +335,13 @@
         }
 
         @media (max-width: 700px) {
+            .diferenciais-grid {
+                justify-content: flex-start;
+                gap: 12px 20px;
+            }
+
             .diferencial-text {
-                white-space: normal;
+                font-size: 14px;
             }
         }
 
@@ -356,7 +362,7 @@
         .o-que-e-descricao {
             max-width: 800px;
             margin: 0 auto 50px;
-            font-size: 16px;
+            font-size: 19px;
             line-height: 1.8;
             color: var(--color-text-secondary);
             text-align: center;
@@ -391,7 +397,7 @@
 
         .proposta-card p {
             color: var(--color-text-secondary);
-            font-size: 16px;
+            font-size: 19px;
         }
 
         .o-que-e-cta {
@@ -450,7 +456,7 @@
         }
 
         .funciona-card p {
-            font-size: 16px;
+            font-size: 19px;
             line-height: 1.6;
             margin-bottom: 0;
         }
@@ -480,7 +486,7 @@
         .personas-hashtag {
             color: var(--color-primary);
             font-weight: 700;
-            font-size: 16px;
+            font-size: 19px;
             margin-bottom: 10px;
         }
 
@@ -492,7 +498,7 @@
         }
 
         .personas-description {
-            font-size: 16px;
+            font-size: 19px;
             color: var(--color-text-secondary);
             max-width: 600px;
             margin: 0 auto;
@@ -526,7 +532,7 @@
         }
 
         .persona-card p {
-            font-size: 16px;
+            font-size: 19px;
             color: var(--color-text-secondary);
             line-height: 1.6;
         }
@@ -565,7 +571,7 @@
 
         .app-showcase-description {
             text-align: center;
-            font-size: 16px;
+            font-size: 19px;
             margin-bottom: 50px;
             max-width: 600px;
             margin-left: auto;
@@ -662,13 +668,13 @@
         }
 
         .beneficio-item p {
-            font-size: 16px;
+            font-size: 19px;
             line-height: 1.5;
         }
 
         .empresas-description {
             text-align: center;
-            font-size: 16px;
+            font-size: 19px;
             color: var(--color-text-secondary);
             margin-bottom: 30px;
         }
@@ -719,7 +725,7 @@
         }
 
         .para-quem-card p {
-            font-size: 16px;
+            font-size: 19px;
             line-height: 1.6;
             color: var(--color-text-secondary);
         }
@@ -764,7 +770,7 @@
         .renda-extra-intro {
             max-width: 800px;
             margin: 0 auto 40px;
-            font-size: 16px;
+            font-size: 19px;
             line-height: 1.8;
             color: var(--color-primary-dark);
             text-align: center;
@@ -841,7 +847,7 @@
 
         .simulacao-description {
             text-align: center;
-            font-size: 16px;
+            font-size: 19px;
             margin-bottom: 50px;
             max-width: 700px;
             margin-left: auto;
@@ -875,7 +881,7 @@
         }
 
         .cenario-conteudo {
-            font-size: 16px;
+            font-size: 19px;
             color: var(--color-white);
             line-height: 1.6;
             padding: 24px 20px;
@@ -923,7 +929,7 @@
         .comunidade-descricao {
             max-width: 800px;
             margin: 0 auto 30px;
-            font-size: 16px;
+            font-size: 19px;
             line-height: 1.8;
             color: var(--color-text-secondary);
             text-align: center;
@@ -968,7 +974,7 @@
         }
 
         .valor-texto {
-            font-size: 16px;
+            font-size: 19px;
             font-weight: 700;
             color: var(--color-primary-dark);
             line-height: 1.4;
@@ -994,7 +1000,7 @@
 
         .taxas-descricao {
             text-align: center;
-            font-size: 16px;
+            font-size: 19px;
             color: var(--color-text-secondary);
             margin-bottom: 30px;
             max-width: 700px;
@@ -1015,7 +1021,7 @@
         .tabela-taxas {
             width: 100%;
             border-collapse: collapse;
-            font-size: 16px;
+            font-size: 19px;
             margin-bottom: 30px;
         }
 
@@ -1067,7 +1073,7 @@
         .download-intro {
             max-width: 700px;
             margin: 0 auto 40px;
-            font-size: 16px;
+            font-size: 19px;
             line-height: 1.8;
         }
 
@@ -1158,7 +1164,7 @@
             background-color: var(--color-white);
             padding: 20px;
             border-top: 1px solid var(--color-border);
-            font-size: 16px;
+            font-size: 19px;
             color: var(--color-text-secondary);
             line-height: 1.8;
         }
@@ -1338,7 +1344,7 @@
         }
 
         .download-modal p {
-            font-size: 16px;
+            font-size: 19px;
             line-height: 1.6;
             margin-bottom: 25px;
             opacity: 0.95;
