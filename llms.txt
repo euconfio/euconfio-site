@@ -1,0 +1,20 @@
+# Eu Confio
+
+> A Eu Confio é uma comunidade que transforma confiança em oportunidade, conectando pessoas e profissionais por meio de indicações estruturadas. O app permite indicar profissionais confiáveis, contratar serviços recomendados e transformar indicações em renda extra.
+
+Eu Confio é um aplicativo brasileiro (disponível para iOS e Android) focado em indicações confiáveis entre pessoas e profissionais, com um modelo de recompensa para quem indica e gera novas oportunidades de negócio.
+
+## Páginas principais
+
+- [Página inicial](https://euconfio.com.br/): Apresentação do produto, como funciona, planos de renda extra, simulação de ganhos e perguntas frequentes.
+
+## Aplicativo
+
+- [App Store](https://apps.apple.com/br/app/eu-confio-facility/id6749334683): Baixar o Eu Confio para iOS.
+- [Google Play](https://play.google.com/store/apps/details?id=com.euconfio.app): Baixar o Eu Confio para Android.
+
+## Contato
+
+- E-mail: falecom@euconfio.com.br
+- WhatsApp: +55 11 98035-9587
+- Instagram: https://www.instagram.com/euconfio.app/
